@@ -24,7 +24,7 @@ const Services = () => {
       glowColor: "bg-blue-50 dark:bg-blue-900/10",
       hoverBorder: "hover:border-blue-200 dark:hover:border-blue-700",
       technologies: [
-        "React.js", "React Router", "Context API", "Tailwind CSS", "Bootstrap"
+        "React.js", "React Router", "Context API", "Axios", "TanStack Query", "Tailwind CSS", "Bootstrap"
       ]
     },
     {
@@ -38,7 +38,7 @@ const Services = () => {
       glowColor: "bg-emerald-50 dark:bg-emerald-900/10",
       hoverBorder: "hover:border-emerald-200 dark:hover:border-emerald-700",
       technologies: [
-        "Node.js", "Express.js", "Axios", "TanStack Query", "Git", "GitHub"
+        "Node.js", "Express.js", "Git", "GitHub"
       ]
     },
     {
