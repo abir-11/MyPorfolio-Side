@@ -58,7 +58,7 @@ const Projects = () => {
       gradient: "from-indigo-500/10 to-purple-500/10 dark:from-indigo-500/20 dark:to-purple-500/20",
       hoverColor: "hover:text-indigo-600 dark:hover:text-white",
       tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind"],
-      demoUrl: "https://tangerine-entremet-a297ff.netlify.app/",
+      demoUrl: "https://idyllic-daffodil-529a0f.netlify.app/",
       sourceUrl: "https://github.com/abir-11/Digital-Life-Lessons-Client-Side.git",
       features: [
         "User authentication with Firebase",
@@ -88,7 +88,7 @@ const Projects = () => {
       gradient: "from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/20 dark:to-teal-500/20",
       hoverColor: "hover:text-emerald-600 dark:hover:text-white",
       tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind"],
-      demoUrl: "https://harmonious-starburst-2d3242.netlify.app/",
+      demoUrl: "https://harmonious-starburst-2d3242.netlify.app",
       sourceUrl: "https://github.com/abir-11/Client-side.git",
       features: [
         "Farmer product listing system",
@@ -111,16 +111,16 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Green Tree",
+      title: "GreenNest",
       subtitle: "Eco-Friendly Project",
       description: "A responsive web application where users can browse, purchase plants, and book plants in advance, featuring secure authentication and a clean, modern user interface with eco-friendly design.",
       detailedDescription: "Green Tree is an eco-conscious e-commerce platform dedicated to promoting environmental sustainability through plant sales and education. The application features a beautiful, nature-inspired design that makes plant shopping an enjoyable experience while educating users about environmental conservation.",
-      image: "https://i.ibb.co.com/3yGZxrRR/Screenshot-2026-01-05-174924.png",
+      image: "https://i.ibb.co.com/35dqDK7W/green-nest-ten-vercel-app-1.png",
       gradient: "from-rose-500/10 to-orange-500/10 dark:from-rose-500/20 dark:to-orange-500/20",
       hoverColor: "hover:text-rose-600 dark:hover:text-white",
-      tags: ["React", "Firebase Auth", "Tailwind", "Responsive Design"],
-      demoUrl: "https://stunning-stardust-4d280d.netlify.app/",
-      sourceUrl: "https://github.com/abir-11/Green-Tree-Client-Side.git",
+      tags: ["Next.js", "Firebase Auth", "Tailwind", "Responsive Design"],
+      demoUrl: "https://green-nest-ten.vercel.app/",
+      sourceUrl: "https://github.com/abir-11/Green-Planted.git",
       features: [
         "Plant catalog with detailed information",
         "Advanced booking system",
@@ -131,9 +131,9 @@ const Projects = () => {
         "Mobile-first responsive design"
       ],
       techStack: {
-        frontend: ["React.js", "Tailwind CSS",],
+        frontend: ["Next.js", "Tailwind CSS",],
         authentication: ["Firebase Authentication"],
-        deployment: ["Netlify", "Firebase Hosting"]
+        deployment: ["Vercel"]
       },
       duration: "3-4 days",
       team: "Solo Project", 

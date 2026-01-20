@@ -1,14 +1,44 @@
-/* Google Fonts Import */
-
+/* Google Fonts Import - Must be at the top */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 
-
-
 /* Tailwind v4 Setup */
-
 @import "tailwindcss";
+
+/* Performance Optimizations */
+* {
+  box-sizing: border-box;
+}
+
+/* Optimize animations for better performance */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* GPU acceleration for smooth animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optimize fonts */
+@font-face {
+  font-display: swap;
+}
 
 
 

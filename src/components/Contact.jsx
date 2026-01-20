@@ -79,14 +79,14 @@ const Contact = () => {
         reply_to: formData.email
       }
 
-      console.log('Sending email with params:', templateParams)
+      console.log('Sending email with params:', JSON.stringify(templateParams, null, 2))
       console.log('✅ Using Service ID:', SERVICE_ID)
       console.log('✅ Using Template ID:', TEMPLATE_ID)
       console.log('✅ Using Public Key:', PUBLIC_KEY.substring(0, 8) + '...')
 
       const result = await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
       
-      console.log('Email sent successfully:', result)
+      console.log('Email sent successfully:', JSON.stringify(result, null, 2))
       setStatus('success')
       setFormData({ name: '', email: '', subject: '', message: '' })
       
@@ -94,7 +94,7 @@ const Contact = () => {
       setTimeout(() => setStatus(null), 5000)
       
     } catch (error) {
-      console.error('Email send failed:', error)
+      console.error('Email send failed:', error.message || String(error))
       setStatus('error')
       
       // Show detailed error for debugging
