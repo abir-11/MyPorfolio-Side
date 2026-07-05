@@ -8,6 +8,7 @@ export const SOCIAL_LINKS = {
 export const NAVIGATION_ITEMS = [
   { name: 'Home', href: '#' },
   { name: 'About', href: '#about' },
+  { name: 'Education', href: '#education' },
   { name: 'Services', href: '#services' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' }

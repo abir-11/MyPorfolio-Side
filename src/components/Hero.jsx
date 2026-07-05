@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import { motion } from 'framer-motion'
 import { Download, Facebook, Twitter, Linkedin } from 'lucide-react'
 import OptimizedImage from './OptimizedImage'
-
+import resumePdf from '../assets/resume-Arafat-Abir.pdf'
 const Hero = memo(() => {
   const socialIcons = [
     { Icon: Facebook, href: 'https://www.facebook.com/arafatalom.abir.1', position: 'icon-1' },
@@ -50,7 +50,7 @@ const Hero = memo(() => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-         MERN Stack Developer | React.js • Node.js • Express • MongoDB • Tailwind | Exploring Next.js 🚀 | Problem Solver(C,C++,JavaScript) | Passionate about Turning Ideas into Modern, Scalable & User-Focused Web Experiences
+        Full Stack Developer | React.js • Next.js • Node.js • Express.js • MongoDB • PostgreSQL • Prisma • Tailwind CSS | Problem Solver (JavaScript, TypeScript, C, C++, DSA) | Passionate About Building Modern, Scalable & User-Centric Web Applications 🚀**
         </motion.p>
 
         <motion.div 
@@ -60,7 +60,7 @@ const Hero = memo(() => {
           transition={{ duration: 0.6, delay: 0.5 }}
         >
           <motion.a
-            href="/resume.pdf"
+            href={resumePdf}
             download="Arafat_Alam_Frontend_Dev.pdf"
             target="_blank"
             className="px-8 py-4 bg-slate-900 dark:bg-accent-dark text-white rounded-lg text-sm font-medium hover:bg-slate-700 dark:hover:bg-slate-700 transition-all shadow-lg hover:shadow-xl flex items-center gap-2 group"

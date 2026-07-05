@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Mail, Share2, Send, Github, Linkedin, Loader2, CheckCircle2, AlertCircle, MapPin, Phone, Download } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 import { EMAILJS_CONFIG } from '../config/emailjs'
+import resumePdf from '../assets/resume-Arafat-Abir.pdf'
 
 const Contact = () => {
   const formRef = useRef()
@@ -418,7 +419,7 @@ const Contact = () => {
                 
                 {/* Resume Download Button */}
                 <motion.a
-                  href="/resume.pdf"
+                  href={resumePdf}
                   download="Arafat_Alam_Frontend_Dev.pdf"
                   target="_blank"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-medium hover:from-indigo-600 hover:to-violet-600 transition-all duration-300 shadow-lg shadow-primary/25 mt-4"

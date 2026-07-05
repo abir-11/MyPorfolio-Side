@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import BackgroundElements from './components/BackgroundElements'
 import ErrorBoundary from './components/ErrorBoundary'
 import About from './components/About'
+import Education from './components/Education'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
@@ -47,6 +48,7 @@ function App() {
         <main className="flex-grow flex flex-col relative">
           <Hero />
           <About />
+          <Education />
           <Services />
           <Projects />
           <Contact />

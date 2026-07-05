@@ -105,17 +105,15 @@ const About = () => {
               className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed"
               variants={itemVariants}
             >
-              🚀 I’m a MERN Stack Web Developer focused on building modern, scalable, and user-friendly web applications that solve real-world problems.
+              🚀 I'm a Full Stack Web Developer passionate about building modern, scalable, and user-friendly web applications that solve real-world problems.
 
-              💻 Technical Expertise: React.js, Node.js, Express, MongoDB, Firebase, Tailwind CSS; building modern, scalable, and user-friendly web applications with clean UIs and secure back-end systems.
+              💻 Technical Expertise: Skilled in React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, Prisma, Mongoose, Firebase, Tailwind CSS, JavaScript, TypeScript, and Git. I enjoy developing responsive front-end interfaces and secure, scalable back-end systems with clean, maintainable code.
 
-              🏆 Career Achievements: Developed full-stack projects solving real-world problems; actively strengthening DSA knowledge and exploring Next.js for high-performance, production-ready applications.
+              🏆 What I Do: I build end-to-end web applications, design RESTful APIs, integrate databases, implement authentication, and create responsive user experiences while following modern development best practices.
 
-              🌟 Passion & Goals: Eager to learn, collaborate, and contribute to meaningful projects; seeking junior-level web development opportunities to grow, innovate, and make a real impact.
+              🌱 Currently Learning: Continuously improving my knowledge of Data Structures & Algorithms (DSA), system design, and advanced full-stack development to build high-performance, production-ready applications.
 
-              🤝 Open to junior-level web development opportunities where I can grow, contribute, and make a real impact through my work.
-
-              
+              🤝 Career Goal: I'm seeking Junior Full Stack Developer opportunities where I can collaborate with talented teams, contribute to impactful products, and continuously grow as a software developer.
             </motion.p>
 
           </div>
@@ -130,9 +128,9 @@ const About = () => {
                 Expertise
               </h4>
               <ul className="text-slate-600 dark:text-slate-400 space-y-1">
-                <li>React • Tailwind Ecosystem & Next.js  Exploring</li>
-                <li>Node.js • Express • MongoDB  & Backend Architecture</li>
-                <li>Problem Solving(C,C++,JavaScript)</li>
+                <li>React • Tailwind Ecosystem & Next.js  </li>
+                <li>Node.js • Express • MongoDB • PostgreSQL • Prisma  & Backend Architecture</li>
+                <li>Problem Solving(JavaScript,TypeScript,C,C++,DSA)</li>
               </ul>
             </motion.div>
 

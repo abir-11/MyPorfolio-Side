@@ -1,7 +1,19 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-import { Code2, Database, Server, Globe, Smartphone, Palette } from 'lucide-react'
+import { Code2, Database, Server } from 'lucide-react'
 import { useScrollToSection } from '../hooks/useScrollToSection'
+import {
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiJavascript,
+  SiTypescript,
+  SiGit,
+  SiMongodb,
+  SiExpress,
+  SiPostgresql,
+  SiPrisma,
+  SiMongoose,
+} from "react-icons/si";
 
 const Services = () => {
   const scrollToSection = useScrollToSection()
@@ -24,12 +36,12 @@ const Services = () => {
       glowColor: "bg-blue-50 dark:bg-blue-900/10",
       hoverBorder: "hover:border-blue-200 dark:hover:border-blue-700",
       technologies: [
-        "React.js", "React Router", "Context API", "Tailwind CSS", "Bootstrap"
+        "React.js", "Next.js", "React Router", "Context API", "Tailwind CSS", "Bootstrap", "Firebase", "JWT Authentication"
       ]
     },
     {
       id: 2,
-      title: "Backend & Tools",
+      title: "Languages & Tools",
       description: "Building robust server-side applications, handling API integrations, and managing version control workflows.",
       icon: Server,
       iconBg: "bg-emerald-50 dark:bg-emerald-900/20",
@@ -38,7 +50,7 @@ const Services = () => {
       glowColor: "bg-emerald-50 dark:bg-emerald-900/10",
       hoverBorder: "hover:border-emerald-200 dark:hover:border-emerald-700",
       technologies: [
-        "Node.js", "Express.js", "Axios", "TanStack Query", "Git", "GitHub"
+        "JavaScript", "TypeScript", "Node.js", "Express.js", "Git", "GitHub"
       ]
     },
     {
@@ -52,22 +64,25 @@ const Services = () => {
       glowColor: "bg-purple-50 dark:bg-purple-900/10",
       hoverBorder: "hover:border-purple-200 dark:hover:border-purple-700",
       technologies: [
-        "MongoDB", "Firebase", "JWT Authentication"
+        "MongoDB", "Mongoose", "PostgreSQL", "Prisma"
       ]
     },
-    
-    
   ]
 
   // Top technology icons with Font Awesome classes
   const topTechnologies = [
-    { name: "React", icon: "fa-brands fa-react", color: "text-blue-400" },
-    { name: "Node.js", icon: "fa-brands fa-node", color: "text-green-500" },
-    { name: "JavaScript", icon: "fa-brands fa-js", color: "text-yellow-400" },
-    { name: "Git", icon: "fa-brands fa-git-alt", color: "text-orange-500" },
-    { name: "MongoDB", icon: "fa-solid fa-database", color: "text-emerald-500" }
-  ]
-
+    { name: "React", icon: SiReact, color: "text-blue-400" },
+    { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
+    { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+    { name: "Express.js", icon: SiExpress, color: "text-gray-500" },
+    { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+    { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
+    { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
+    { name: "Mongoose", icon: SiMongoose, color: "text-red-500" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-700" },
+    { name: "Prisma", icon: SiPrisma, color: "text-indigo-500" },
+    { name: "Git", icon: SiGit, color: "text-orange-500" },
+  ];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -92,11 +107,11 @@ const Services = () => {
   }
 
   return (
-    <section 
-      id="services" 
+    <section
+      id="services"
       className="w-full bg-background-light dark:bg-background-dark py-20 px-6 md:px-20 lg:px-32 relative z-20"
     >
-      <motion.div 
+      <motion.div
         className="max-w-7xl mx-auto"
         variants={containerVariants}
         initial="hidden"
@@ -104,7 +119,7 @@ const Services = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16 max-w-5xl mx-auto"
           variants={itemVariants}
         >
@@ -114,7 +129,7 @@ const Services = () => {
           >
             Tech Stack & Expertise
           </motion.div>
-          
+
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 text-slate-900 dark:text-white leading-tight">
             Tools that power my{' '}
             <br className="hidden md:block" />
@@ -122,39 +137,48 @@ const Services = () => {
               digital creations
             </span>
           </h1>
-          
+
           <p className="max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-            A comprehensive overview of the technologies, frameworks, and tools I use to build 
+            A comprehensive overview of the technologies, frameworks, and tools I use to build
             scalable, high-performance web applications.
           </p>
         </motion.div>
 
         {/* Top Technology Icons */}
-        <motion.div 
+        <motion.div
           className="w-full overflow-hidden mb-20"
           variants={itemVariants}
         >
-          <motion.div 
+          <motion.div
             className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-80 dark:opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
             variants={containerVariants}
           >
-            {topTechnologies.map((tech, index) => (
-              <motion.div
-                key={tech.name}
-                className="flex flex-col items-center gap-2 group"
-                variants={itemVariants}
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.2 }}
-              >
-                <i className={`${tech.icon} text-4xl ${tech.color} transform group-hover:-translate-y-1 transition-transform`}></i>
-                <span className="text-xs font-medium">{tech.name}</span>
-              </motion.div>
-            ))}
+            {topTechnologies.map((tech) => {
+              const Icon = tech.icon;
+
+              return (
+                <motion.div
+                  key={tech.name}
+                  className="flex flex-col items-center gap-2 group"
+                  variants={itemVariants}
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <Icon
+                    className={`text-4xl ${tech.color} transform group-hover:-translate-y-1 transition-transform`}
+                  />
+
+                  <span className="text-xs font-medium">
+                    {tech.name}
+                  </span>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </motion.div>
 
         {/* Technology Categories Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
         >
@@ -170,7 +194,7 @@ const Services = () => {
               <div className={`absolute top-0 right-0 w-32 h-32 ${category.glowColor} rounded-full blur-3xl -mr-16 -mt-16 transition-opacity opacity-0 group-hover:opacity-100`}></div>
 
               {/* Icon */}
-              <motion.div 
+              <motion.div
                 className={`w-14 h-14 rounded-2xl ${category.iconBg} flex items-center justify-center mb-6 ${category.iconColor} group-hover:scale-110 transition-transform duration-300`}
                 whileHover={{ rotate: 5 }}
               >
@@ -181,7 +205,7 @@ const Services = () => {
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3 font-display">
                 {category.title}
               </h2>
-              
+
               {/* Description */}
               <p className="text-slate-500 dark:text-slate-400 text-sm mb-8 leading-relaxed">
                 {category.description}
@@ -207,7 +231,7 @@ const Services = () => {
         </motion.div>
 
         {/* Call to Action */}
-        <motion.div 
+        <motion.div
           className="text-center mt-16"
           variants={itemVariants}
         >

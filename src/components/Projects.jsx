@@ -88,7 +88,7 @@ const Projects = () => {
       gradient: "from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/20 dark:to-teal-500/20",
       hoverColor: "hover:text-emerald-600 dark:hover:text-white",
       tags: ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind"],
-      demoUrl: "https://harmonious-starburst-2d3242.netlify.app",
+      demoUrl: "https://symphonious-sprinkles-5f85d5.netlify.app/",
       sourceUrl: "https://github.com/abir-11/Client-side.git",
       features: [
         "Farmer product listing system",
@@ -110,7 +110,38 @@ const Projects = () => {
       status: "Completed"
     },
     {
-      id: 3,
+      "id": 3,
+      "title": "Restaurant Management Platform",
+      "subtitle": "Restaurant Management Platform",
+      "description": "A full-stack MERN application for managing restaurants, menu items, orders, and reservations with role-based access and real-time updates.",
+      "detailedDescription": "Restaurant Management Platform is a comprehensive restaurant management platform built with the MERN stack. The application allows restaurant owners to manage menus, track orders, and monitor reservations. Users can browse restaurants, place orders, and make reservations, while admins oversee the entire system. The platform supports real-time updates and provides analytics for better business insights.",
+      "image": "https://i.ibb.co.com/n86XFcZN/preeminent-chaja-b1012d-netlify-app-contact-2.png",
+      "gradient": "from-orange-500/10 to-red-500/10 dark:from-orange-500/20 dark:to-red-500/20",
+      "hoverColor": "hover:text-orange-600 dark:hover:text-white",
+      "tags": ["React", "Node.js", "Express.js", "MongoDB", "Firebase Auth", "Tailwind"],
+      "demoUrl": "https://preeminent-chaja-b1012d.netlify.app/",
+      "sourceUrl": "https://github.com/abir-11/Restaurant-Client-Side.git",
+      "features": [
+        "Role-based user authentication (Admin, Owner, Customer)",
+        "Restaurant and menu management",
+        "Order processing and tracking system",
+        "Reservation system with date & time selection",
+        "Responsive design for mobile and desktop",
+        "Real-time updates and notifications"
+      ],
+      "techStack": {
+        "frontend": ["React.js", "Tailwind CSS", "React Router", "React Hook Form"],
+        "backend": ["Node.js", "Express.js", "MongoDB"],
+        "authentication": ["Firebase Authentication"],
+        "deployment": ["Netlify", "Vercel"]
+      },
+      "duration": "25 days",
+      "team": "Solo Project",
+      "status": "Completed"
+    },
+
+    {
+      id: 4,
       title: "GreenNest",
       subtitle: "Eco-Friendly Project",
       description: "A responsive web application where users can browse, purchase plants, and book plants in advance, featuring secure authentication and a clean, modern user interface with eco-friendly design.",
@@ -122,6 +153,7 @@ const Projects = () => {
       demoUrl: "https://green-nest-ten.vercel.app/",
       sourceUrl: "https://github.com/abir-11/Green-Planted.git",
       features: [
+        "Role-based user authentication (Admin, Seller, Customer)",
         "Plant catalog with detailed information",
         "Advanced booking system",
         "User wishlist and favorites",
@@ -135,8 +167,8 @@ const Projects = () => {
         authentication: ["Firebase Authentication"],
         deployment: ["Vercel"]
       },
-      duration: "3-4 days",
-      team: "Solo Project", 
+      duration: "10 days",
+      team: "Solo Project",
       status: "Completed"
     }
   ]
@@ -166,18 +198,18 @@ const Projects = () => {
 
   return (
     <>
-      <section 
-        id="projects" 
+      <section
+        id="projects"
         className="w-full bg-slate-50 dark:bg-section-dark py-20 px-6 md:px-20 lg:px-32 relative z-20"
       >
-        <motion.div 
+        <motion.div
           className="max-w-7xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          <motion.div 
+          <motion.div
             className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6"
             variants={itemVariants}
           >
@@ -187,11 +219,11 @@ const Projects = () => {
                 <span className="text-slate-400 font-serif italic">Projects</span>
               </h2>
               <p className="text-slate-600 dark:text-slate-400 max-w-lg">
-                A selection of recent work I've built using modern technologies. Each project 
+                A selection of recent work I've built using modern technologies. Each project
                 represents a unique challenge and solution.
               </p>
             </div>
-            
+
             <motion.a
               href="#projects"
               onClick={(e) => handleProjectClick(e, '#projects')}
@@ -203,7 +235,7 @@ const Projects = () => {
             </motion.a>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             variants={containerVariants}
           >
@@ -216,13 +248,13 @@ const Projects = () => {
                 transition={{ duration: 0.3 }}
               >
                 {/* Project Image */}
-                <motion.div 
+                <motion.div
                   className="h-64 relative overflow-hidden bg-slate-100 dark:bg-slate-800"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
                     loading="lazy"
@@ -241,7 +273,7 @@ const Projects = () => {
                 </motion.div>
 
                 <div className="p-6">
-                  <motion.div 
+                  <motion.div
                     className="mb-3"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -254,12 +286,12 @@ const Projects = () => {
                       {project.subtitle}
                     </p>
                   </motion.div>
-                  
+
                   {/* Description with Read More */}
                   <div className="mb-4">
                     <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                      {expandedDescriptions[project.id] 
-                        ? project.description 
+                      {expandedDescriptions[project.id]
+                        ? project.description
                         : `${project.description.substring(0, 120)}${project.description.length > 120 ? '...' : ''}`
                       }
                     </p>
@@ -273,7 +305,7 @@ const Projects = () => {
                     )}
                   </div>
 
-                  <motion.div 
+                  <motion.div
                     className="flex flex-wrap gap-2 mb-6"
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -319,7 +351,7 @@ const Projects = () => {
                         <ExternalLink className="w-4 h-4" />
                         Live
                       </motion.a>
-                      
+
                       <motion.a
                         href={project.sourceUrl}
                         onClick={(e) => handleProjectClick(e, project.sourceUrl)}
@@ -379,7 +411,7 @@ const Projects = () => {
               <div className="overflow-y-auto max-h-[calc(95vh-120px)] scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-600 scrollbar-track-transparent">
                 <div className="p-8 space-y-10">
                   {/* Hero Image Section */}
-                  <motion.div 
+                  <motion.div
                     className="relative group"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -393,10 +425,10 @@ const Projects = () => {
                       />
                       {/* Image Overlay */}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
-                      
+
                       {/* Status Badge */}
                       <div className="absolute top-6 right-6">
-                        <motion.span 
+                        <motion.span
                           className="px-4 py-2 bg-green-500 text-white text-sm font-semibold rounded-full shadow-lg backdrop-blur-sm"
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
@@ -435,7 +467,7 @@ const Projects = () => {
                   </motion.div>
 
                   {/* Project Stats Cards */}
-                  <motion.div 
+                  <motion.div
                     className="grid grid-cols-1 md:grid-cols-3 gap-6"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -509,8 +541,8 @@ const Projects = () => {
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {selectedProject.features.map((feature, index) => (
-                        <motion.div 
-                          key={index} 
+                        <motion.div
+                          key={index}
                           className="group bg-white dark:bg-slate-800 p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-300 dark:hover:border-indigo-600 transition-all duration-300 hover:shadow-lg"
                           initial={{ opacity: 0, x: -20 }}
                           animate={{ opacity: 1, x: 0 }}
@@ -540,8 +572,8 @@ const Projects = () => {
                     </h3>
                     <div className="space-y-6">
                       {Object.entries(selectedProject.techStack).map(([category, technologies], categoryIndex) => (
-                        <motion.div 
-                          key={category} 
+                        <motion.div
+                          key={category}
                           className="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm"
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -571,7 +603,7 @@ const Projects = () => {
                   </motion.div>
 
                   {/* Main Action Buttons */}
-                  <motion.div 
+                  <motion.div
                     className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-slate-200 dark:border-slate-700"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
