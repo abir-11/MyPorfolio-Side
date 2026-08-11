@@ -49,7 +49,7 @@ const About = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10"></div>
             <motion.img
-              src="https://i.ibb.co.com/Kc929pZp/IMG-8039.jpg"
+              src="https://res.cloudinary.com/zuclzwuy/image/upload/v1784352315/IMG_20260405_104752_elt1pz.png"
               alt="Professional shot of Mirta working"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             />
@@ -89,7 +89,7 @@ const About = () => {
         </motion.div>
 
         <motion.div
-          className="w-full lg:w-7/12 space-y-8"
+          className="w-full lg:w-8/12 space-y-8"
           variants={itemVariants}
         >
           <div className="space-y-4">

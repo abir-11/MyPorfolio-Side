@@ -50,6 +50,66 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "SecureExam",
+      subtitle: "Online Examination Platform",
+      description: "A secure and robust online examination system built with Next.js and MongoDB. Designed for seamless exam management, automated timer tracking, role-based user access, and instant result evaluation.",
+      detailedDescription: "SecureExam is a modern web-based examination platform designed to facilitate fair, efficient, and hassle-free online testing. Powered by Next.js for high-performance frontend rendering and MongoDB for scalable data storage, the system allows educators to create, schedule, and grade exams effortlessly. Students can take tests within a controlled environment equipped with real-time timers, automated submissions, and instant performance feedback.",
+      image: "https://res.cloudinary.com/zuclzwuy/image/upload/v1785008193/secure-exam-online-examination-plat-jade.vercel.app__5_1_dasgx0.png",
+      gradient: "from-blue-500/10 to-indigo-500/10 dark:from-blue-500/20 dark:to-indigo-500/20",
+      hoverColor: "hover:text-blue-600 dark:hover:text-white",
+      tags: ["Next.js", "MongoDB", "Tailwind CSS", "TypeScript", "Express.js", "Node.js"],
+      demoUrl: "https://secure-exam-online-examination-plat-jade.vercel.app/",
+      sourceUrl: "https://github.com/abir-11/online-secure-exam.git",
+      features: [
+        "Dynamic exam creation and question bank management for educators",
+        "Real-time countdown timer with automated exam submission",
+        "Role-based access control for Students and Administrators",
+        "Instant automated grading and comprehensive result analytics",
+        "Secure test environment to minimize unauthorized activities",
+        "Fully responsive dashboard optimized for all devices"
+      ],
+      techStack: {
+        frontend: ["Next.js", "Tailwind CSS", "JavaScript","JavaScript", "React Hook Form", "Framer Motion"],
+        backend: ["Node.js", "Express.js", "MongoDB"],
+        authentication: ["NextAuth.js", "JWT"],
+        deployment: ["Vercel"]
+      },
+      duration: "12-15 days",
+      team: "Solo Project",
+      status: "Completed"
+    },
+    {
+      id: 2,
+      title: "Rent Nest",
+      subtitle: "Property Rental Platform",
+      description: "A modern full-stack rental management platform built with Next.js, Prisma, and PostgreSQL. Features seamless property listing, dynamic search filtering, and an intuitive booking management system.",
+      detailedDescription: "Rent Nest is a comprehensive real estate and property rental platform designed to streamline house hunting and property management. Built with Next.js for server-side performance and powered by Prisma ORM with PostgreSQL, it delivers high reliability, fast data fetching, and an exceptional user experience. Users can search and filter properties by location and price, list their own rental units, and manage rental requests in real time.",
+      image: "https://res.cloudinary.com/zuclzwuy/image/upload/v1786453401/rent-nest-client-side.vercel.app__1_yxu8g4.png",
+      gradient: "from-emerald-500/10 to-teal-500/10 dark:from-emerald-500/20 dark:to-teal-500/20",
+      hoverColor: "hover:text-emerald-600 dark:hover:text-white",
+      tags: ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS", "TypeScript", "Node.js"],
+      demoUrl: "https://rent-nest-client-side.vercel.app/",
+      sourceUrl: "https://github.com/abir-11/Rent-Nest-Client-Side.git",
+      features: [
+        "Advanced property search with dynamic location and price filters",
+        "Complete listing creation and management for house owners",
+        "Interactive booking request and status management system",
+        "Secure user authentication and role-based access control",
+        "Responsive and modern UI built with Tailwind CSS",
+        "Efficient database querying with Prisma ORM and PostgreSQL"
+      ],
+      techStack: {
+        frontend: ["Next.js","Tailwind CSS", "TypeScript","React Hook Form","Framer Motion"],
+        backend: ["Node.js", "Prisma ORM", "PostgreSQL"],
+        authentication: ["NextAuth.js / JWT"],
+        deployment: ["Vercel"]
+      },
+      duration: "12-18 days",
+      team: "Solo Project",
+      status: "Completed"
+    },
+    {
+      id: 3,
       title: "Digital Life Lessons",
       subtitle: "Education Platform",
       description: "A full-stack MERN platform for sharing digital life lessons with integrated lesson creation and listing management features. Comprehensive educational dashboard with real-time content management.",
@@ -79,7 +139,7 @@ const Projects = () => {
       status: "Completed"
     },
     {
-      id: 2,
+      id: 4,
       title: "My Krishi",
       subtitle: "Agriculture Portal",
       description: "A full-stack MERN platform supporting farmers and local communities to list and sell fruits and vegetables, with bidding and purchase features. Includes community skill exchange with protected booking system.",
@@ -106,11 +166,11 @@ const Projects = () => {
         deployment: ["Netlify", "Vercel"]
       },
       duration: "8-12 days",
-      team: "Solo Project",
+      team: "Solo Project", 
       status: "Completed"
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Restaurant Management Platform",
       "subtitle": "Restaurant Management Platform",
       "description": "A full-stack MERN application for managing restaurants, menu items, orders, and reservations with role-based access and real-time updates.",
@@ -141,7 +201,7 @@ const Projects = () => {
     },
 
     {
-      id: 4,
+      id: 6,
       title: "GreenNest",
       subtitle: "Eco-Friendly Project",
       description: "A responsive web application where users can browse, purchase plants, and book plants in advance, featuring secure authentication and a clean, modern user interface with eco-friendly design.",

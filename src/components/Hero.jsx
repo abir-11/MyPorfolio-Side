@@ -16,8 +16,7 @@ const Hero = memo(() => {
     <section className="flex flex-col lg:flex-row items-center justify-center lg:justify-between px-6 md:px-20 lg:px-32 relative py-10 md:py-20 lg:min-h-[calc(100vh-88px)]">
       
       <motion.div 
-        // পরিবর্তন ৩: নিচের মার্জিন বা স্পেসিং ঠিক রাখার জন্য mb-8 বা প্রয়োজনমত ক্লাস এডজাস্ট করা যাবে
-        className="w-full lg:w-1/2 z-10 flex flex-col items-start space-y-6 md:space-y-8"
+        className="w-full lg:w-2/3 z-10 flex flex-col items-start space-y-6 md:space-y-8"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -38,7 +37,7 @@ const Hero = memo(() => {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             Arafat{' '}
-            <span className="curved-underline relative italic font-serif text-slate-800 dark:text-slate-100">
+            <span className="relative italic font-serif text-slate-800 dark:text-slate-100">
               Alam Abir
             </span>
           </motion.h1>
@@ -75,7 +74,7 @@ const Hero = memo(() => {
 
       {/* Image Section: Hidden on mobile/tablet, Visible on LG screens only */}
       <motion.div 
-        className="hidden lg:flex w-1/2 relative h-auto items-end justify-center self-stretch"
+        className="hidden lg:flex w-full lg:w-1/3 relative h-auto items-end justify-center self-stretch"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
@@ -102,7 +101,7 @@ const Hero = memo(() => {
         </div>
 
         <OptimizedImage
-          src="https://i.ibb.co.com/Kc929pZp/IMG-8039.jpg"
+          src="https://res.cloudinary.com/zuclzwuy/image/upload/v1784352315/IMG_20260405_104752_elt1pz.png"
           alt="Portrait of Arafat Alam Abir, Web Developer"
           className="relative z-20 h-full w-auto object-cover rounded-2xl object-top"
           style={{
